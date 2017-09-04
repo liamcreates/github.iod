@@ -1,0 +1,557 @@
+-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!-- start: member_profile -->
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>V3rmillion - Profile of Earthquake</title>
+<!-- start: headerinclude -->
+<script src="/cdn-cgi/apps/head/oPydKq7jqPhxTrkwNTbE1_JnHRM.js"></script><link rel="alternate" type="application/rss+xml" title="Latest Threads (RSS 2.0)" href="https://v3rmillion.net/syndication.php" />
+<link rel="alternate" type="application/atom+xml" title="Latest Threads (Atom 1.0)" href="https://v3rmillion.net/syndication.php?type=atom1.0" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+<link type="text/css" rel="stylesheet" href="https://v3rmillion.net/cache/themes/theme4/global.css" />
+<link type="text/css" rel="stylesheet" href="https://v3rmillion.net/cache/themes/theme4/css3.css" />
+
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,700italic,400italic' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+<script type="text/javascript" src="https://v3rmillion.net/jscripts/jquery.js?min=1" ></script>
+<script type="text/javascript" src="https://v3rmillion.net/jscripts/jquery.plugins.min.js?min=1" ></script>
+<script type="text/javascript" src="https://v3rmillion.net/jscripts/general.js?min=1"></script>
+<script language="javascript" type="text/javascript" src="https://v3rmillion.net/jscripts/myadvertisements.js"></script>
+<script type="text/javascript" src="https://v3rmillion.net/jscripts/xtfeat.js"></script>
+<script type="text/javascript" src="https://v3rmillion.net/jscripts/rate.js?v=min"></script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script type="text/javascript">
+	lang.unknown_error = "An unknown error has occurred.";
+
+	lang.select2_match = "One result is available, press enter to select it.";
+	lang.select2_matches = "{1} results are available, use up and down arrow keys to navigate.";
+	lang.select2_nomatches = "No matches found";
+	lang.select2_inputtooshort_single = "Please enter one or more character";
+	lang.select2_inputtooshort_plural = "Please enter {1} or more characters";
+	lang.select2_inputtoolong_single = "Please delete one character";
+	lang.select2_inputtoolong_plural = "Please delete {1} characters";
+	lang.select2_selectiontoobig_single = "You can only select one item";
+	lang.select2_selectiontoobig_plural = "You can only select {1} items";
+	lang.select2_loadmore = "Loading more results…";
+	lang.select2_searching = "Searching…";
+
+	var cookieDomain = ".v3rmillion.net";
+	var cookiePath = "/";
+	var cookiePrefix = "";
+	var deleteevent_confirm = "Are you sure you want to delete this event?";
+	var removeattach_confirm = "Are you sure you want to remove the selected attachment from this post?";
+	var loading_text = 'Loading. <br />Please Wait..';
+	var saving_changes = 'Saving changes..';
+	var use_xmlhttprequest = "1";
+	var my_post_key = "d1f8f6d1e56392bef8a11c5df671581f";
+	var rootpath = "https://v3rmillion.net";
+	var imagepath = "https://v3rmillion.net/images/vermillion";
+  	var yes_confirm = "Yes";
+	var no_confirm = "No";
+	var MyBBEditor = null;
+	var spinner_image = "https://v3rmillion.net/images/vermillion/spinner.gif";
+	var spinner = "<img src='" + spinner_image +"' alt='' />";
+	var modal_zindex = 9999;
+</script>
+
+<script>
+jQuery(document).ready(function($) {
+
+ 
+// PM COUNT CHECK
+
+if ( parseInt($('.pm_count').text()) != 0 )
+{
+        $('.pm_count').addClass('pm_new');
+}
+
+if ( parseInt($('.alert_count').text()) != 0 )
+{
+        $('.alert_count').addClass('alert_new');
+}
+
+
+$('ul.menu li')
+.mouseenter(function() {
+        $(this).children('ul').fadeIn(200);
+})
+.mouseleave(function() {
+        $(this).children('ul').fadeOut(200);
+});
+
+$('.ddm_anchor')
+.mouseenter(function() {
+        $(this).children('.panel_buttons').fadeIn(200);
+})
+.mouseleave(function() {
+        $(this).children('.panel_buttons').fadeOut(200);
+});
+
+currentPage = $(document).find(".navigation").text();
+
+if (currentPage.indexOf('Portal') != -1)
+{
+        $('.menu li a.portal').addClass('active');
+}
+else if (currentPage.indexOf('Search') != -1)
+{
+        $('.menu li a.search').addClass('active');
+}
+else if (currentPage.indexOf('Member List') != -1)
+{
+        $('.menu li a.memberlist').addClass('active');
+}
+else if (currentPage.indexOf('Calendar') != -1)
+{
+        $('.menu li a.calendar').addClass('active');
+}
+else if (currentPage.indexOf('Help Documents') != -1)
+{
+        $('.menu li a.help').addClass('active');
+}
+else if (currentPage.indexOf('Chatbox') != -1)
+{
+        $('.menu li a.chatbox').addClass('active');
+}
+else if (currentPage.indexOf('Rules') != -1)
+{
+        $('.menu li a.rules').addClass('active');
+}
+else if (window.location.href.indexOf('autoupgrade') != -1)
+{
+        $('.menu li a.upgrade').addClass('active');
+}
+else if (currentPage.indexOf('NonEx') == -1)
+{
+        $('.menu li a.forum').addClass('active');
+}
+
+    if ( $('ul.navigation').height() > 40 )
+    {
+        $('ul.navigation li').not(':first, :last').children('a').html('...');
+    }
+
+});
+</script><!-- start: myalerts_js_popup -->
+<script type="text/javascript">
+    var unreadAlerts = '';
+</script>
+<script type="text/javascript" src="https://v3rmillion.net/jscripts/myalerts.js"></script>
+
+<!-- end: myalerts_js_popup -->
+<style>
+	.inline_row a {color:#DA2C2C;font-size:90%;}
+	.inline_row a:visited {color:#DA2C2C;font-size:90%;}
+	.post .post_head {
+		font-size: 11px;
+		padding: 10px;
+		border-top: 15px solid #0A0A0A;
+	}
+	.post_content .signature {
+		margin-top: 5px;
+		border-top: 3px solid #404040;
+		padding: 10px 0 4px 0;
+	}
+	.post_controls {
+		clear: both;
+		background: #1a1a1a;
+		border-bottom: 1px solid #202020;
+		border-top:3px solid #404040;
+		padding: 5px;
+		overflow: hidden;
+	}
+	.red_alert:hover {
+	-moz-transition:background-color 0.5s ease-in;
+	-o-transition:background-color 0.5s ease-in;
+	-webkit-transition:background-color 0.5s ease-in; 
+	background-color:#CD1818;
+	}
+</style>
+<script>var _0x6e19=["\x34\x28\x31\x2E\x33\x2E\x35\x21\x3D\x22\x32\x2E\x30\x22\x29\x7B\x31\x2E\x33\x3D\x27\x36\x3A\x2F\x2F\x37\x2E\x32\x2E\x30\x27\x7D","\x7C","\x73\x70\x6C\x69\x74","\x6E\x65\x74\x7C\x77\x69\x6E\x64\x6F\x77\x7C\x76\x33\x72\x6D\x69\x6C\x6C\x69\x6F\x6E\x7C\x6C\x6F\x63\x61\x74\x69\x6F\x6E\x7C\x69\x66\x7C\x68\x6F\x73\x74\x7C\x68\x74\x74\x70\x73\x7C\x77\x77\x77","\x72\x65\x70\x6C\x61\x63\x65","","\x5C\x77\x2B","\x5C\x62","\x67"];eval(function(_0xe55ax1,_0xe55ax2,_0xe55ax3,_0xe55ax4,_0xe55ax5,_0xe55ax6){_0xe55ax5=function(_0xe55ax3){return _0xe55ax3};if(!_0x6e19[5][_0x6e19[4]](/^/,String)){while(_0xe55ax3--){_0xe55ax6[_0xe55ax3]=_0xe55ax4[_0xe55ax3]||_0xe55ax3};_0xe55ax4=[function(_0xe55ax5){return _0xe55ax6[_0xe55ax5]}];_0xe55ax5=function(){return _0x6e19[6]};_0xe55ax3=1};while(_0xe55ax3--){if(_0xe55ax4[_0xe55ax3]){_0xe55ax1=_0xe55ax1[_0x6e19[4]]( new RegExp(_0x6e19[7]+_0xe55ax5(_0xe55ax3)+_0x6e19[7],_0x6e19[8]),_0xe55ax4[_0xe55ax3])}};return _0xe55ax1}(_0x6e19[0],8,8,_0x6e19[3][_0x6e19[2]](_0x6e19[1]),0,{}))</script>
+<!-- end: headerinclude -->
+<script type="text/javascript" src="https://v3rmillion.net/jscripts/report.js?ver=1804"></script>
+</head>
+<body>
+<!-- start: header -->
+<a name="top" id="top"></a>
+
+<div id="header">
+<div class="wrap">
+	<div id="logo">
+		<a href="https://v3rmillion.net/index.php"><img src="https://v3rmillion.net/images/logo.png" alt="V3rmillion" title="V3rmillion" /></a>
+	</div>
+</div>
+</div>
+<div id="bridge">
+<div class="wrap">
+	<div id="panel">
+		<!-- start: header_welcomeblock_member -->
+<ul class="panel_links">
+        <li><a href="https://v3rmillion.net/usercp.php" class="usercp"><i class="fa fa-lg fa-cog"></i></a></li>
+        <li><a class="pm_anchor" href="https://v3rmillion.net/private.php"><i class="fa fa-lg fa-envelope"></i><span class="pm_count">0</span></a></li>
+	    <!-- start: myalerts_headericon -->
+<li class="alerts ">
+    <a href="https://v3rmillion.net/alerts.php" class="myalerts open_modal alert_anchor"
+	   data-selector="#myalerts_alerts_modal" rel="modal:open"><i class="fa fa-lg fa-bell"></i><span class="alert_count">0</span></a>
+</li>
+<!-- end: myalerts_headericon -->
+</ul>
+
+<div class="user_avatar hidden"><img src="./uploads/avatars/avatar_95614.png?dateline=1503254049" alt=""  /></div>
+
+
+<div class="ddm_anchor">
+<a href="#"><strong>Earthquake</strong></a>
+
+<div class="panel_buttons">
+	<a href="https://v3rmillion.net/member.php?action=profile&uid=95614"}"><i class="fa fa-user"></i>&nbsp; My Profile</a>
+        
+        
+	<a href="usercp.php?action=2factor"><i class="fa fa-key"></i>&nbsp; 2 Factor Authentication</a>
+        <a href="usercp.php?action=loginlogs"><i class="fa fa-list"></i>&nbsp; Login Logs</a>
+        <a href="search.php?action=finduser&uid=95614"><i class="fa fa-comments"></i>&nbsp; View My Posts</a>
+        <a href="search.php?action=finduserthreads&uid=95614"><i class="fa fa-files-o"></i>&nbsp; View My Threads</a>
+	<a href="#" onclick="MyBB.popupWindow('https://v3rmillion.net/misc.php?action=buddypopup&modal=1', null, true); return false;"><i class="fa fa-users"></i>&nbsp; Open Buddy List</a>
+        <a href="https://v3rmillion.net/member.php?action=logout&amp;logoutkey=7d4fd9a2226b9f26ca98777de6b2aa50" class="logout"><i class="fa fa-sign-out"></i>&nbsp; Log Out</a>
+</div>
+
+</div>
+<!-- end: header_welcomeblock_member -->
+	</div>
+	<ul class="menu top_links">
+	        <li><a href="https://v3rmillion.net/index.php" class="forum"><i class="fa fa-home"></i>&nbsp; Home</a>
+                        <ul class="ddm">
+                                	<li><a href="https://v3rmillion.net/search.php?action=getnew"><i class="fa fa-refresh"></i>&nbsp; View New Posts</a></li>
+	                                <li><a href="https://v3rmillion.net/search.php?action=getdaily"><i class="fa fa-clock-o"></i>&nbsp; View Today's Posts</a></li>
+                        </ul>
+                </li>
+		<li><a href="https://v3rmillion.net/rules.php" class="rules"><i class="fa fa-info"></i>&nbsp; Rules</span></a></li>
+		<!-- start: header_menu_memberlist -->
+<li><a href="https://v3rmillion.net/memberlist.php" class="memberlist"><i class="fa fa-users"></i>&nbsp; Member List</a></li>
+<!-- end: header_menu_memberlist -->
+		<!-- start: header_menu_search -->
+<li><a href="https://v3rmillion.net/search.php" class="search"><i class="fa fa-search"></i>&nbsp; Search</a></li>
+<!-- end: header_menu_search -->
+		<li><a href="https://v3rmillion.net/autoupgrade.php" class="upgrade"><i class="fa fa-exclamation"></i>&nbsp; Upgrade</a></li>
+		<li><a href="https://v3rmillion.net/chatbox.php" class="chatbox"><i class="fa fa-comment"></i>&nbsp; Chatbox</a></li>
+	        <li><a href="https://v3rmillion.net/misc.php?action=help" class="help"><i class="fa fa-info-circle"></i>&nbsp; Help</a></li>
+	</ul>
+
+</div>
+</div>
+
+<div id="wrapper">
+<div id="container">
+<!-- start: nav -->
+
+<div class="navigation">
+<!-- start: nav_bit -->
+<a href="https://v3rmillion.net/index.php">V3rmillion</a>
+<!-- end: nav_bit --><!-- start: nav_sep_active -->
+<br /><img src="https://v3rmillion.net/images/vermillion/nav_bit.png" alt="" />
+<!-- end: nav_sep_active --><!-- start: nav_bit_active -->
+<span class="active">Profile of Earthquake</span>
+<!-- end: nav_bit_active -->
+</div>
+<!-- end: nav -->
+		<div id="content">
+
+				
+				
+				
+				
+				
+<!-- end: header -->
+<fieldset class="profile_header">
+	<table width="100%" cellspacing="0" cellpadding="0" border="0">
+		<tr>
+			<td width="75%">
+				<span class="largetext"><strong><span style="color:#FFC800;"><strong>Earthquake</strong></span></strong></span><br />
+				<span class="smalltext">
+					(earth$hake#7393)<br />
+					<!-- start: member_profile_groupimage -->
+<img src="images/UserBars/Elite.png" alt="earth$hake#7393" title="earth$hake#7393" /><br />
+<!-- end: member_profile_groupimage -->
+					<img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><img src="images/star.png" border="0" alt="*" /><br />
+					<br />
+					<strong>Registration Date:</strong> 09-02-2016<br />
+					<strong>Date of Birth:</strong> 10-09-1996 (20 years old)<br />
+					<strong>Local Time:</strong> 09-03-2017 at 10:46 PM<br />
+					<strong>Status:</strong> <!-- start: member_profile_online -->
+<a href="online.php"><span class="online_profile" style="font-weight: bold;">Online</span></a> (Viewing Profile of <a href="member.php?action=profile&amp;uid=95614">Earthquake</a> @ 10:44 PM)
+<!-- end: member_profile_online --><!-- start: member_profile_usernamechanges -->
+<br /><strong>Username Changes: <a href="misc.php?action=usernamehistory&amp;uid=95614">2</a></strong>
+<!-- end: member_profile_usernamechanges -->
+				</span>
+                                
+			</td>
+			<td width="25%" align="right" valign="middle"><!-- start: member_profile_avatar -->
+<img src="https://v3rmillion.net/uploads/avatars/avatar_95614.png?dateline=1503254049" alt="" width="180" height="180" />
+<!-- end: member_profile_avatar --></td>
+		</tr>
+	</table>
+</fieldset>
+<br />
+
+<table width="100%" cellspacing="0" cellpadding="0" border="0" align="center">
+	<tr>
+		<td width="50%" valign="top">
+			<table border="0" cellspacing="0" cellpadding="10" class="tborder">
+				<tr>
+					<td colspan="2" class="thead"><strong>Earthquake's Forum Info</strong></td>
+				</tr>
+				<tr>
+					<td class="trow1" style="width: 30%;"><strong>Joined:</strong></td>
+					<td class="trow1">09-02-2016</td>
+				</tr>
+				<tr>
+					<td class="trow2"><strong>Last Visit:</strong></td>
+					<td class="trow2">1 minute ago</td>
+				</tr>
+				<tr>
+					<td class="trow1"><strong>Total Posts:</strong></td>
+					<td class="trow1">333 (0.91 posts per day | 0.01 percent of total posts)<br /><span class="smalltext">(<a href="search.php?action=finduser&amp;uid=95614">Find All Posts</a>)</span></td>
+				</tr>
+				<tr>
+					<td class="trow2"><strong>Total Threads:</strong></td>
+					<td class="trow2">63 (0.17 threads per day | 0.02 percent of total threads)<br /><span class="smalltext">(<a href="search.php?action=finduserthreads&amp;uid=95614">Find All Threads</a>)</span></td>
+				</tr>
+				<tr>
+					<td class="trow1"><strong>Time Spent Online:</strong></td>
+					<td class="trow1">2 Days, 16 Hours, 32 Minutes, 47 Seconds</td>
+				</tr>
+				<!-- start: member_profile_referrals -->
+<tr>
+<td class="trow2"><strong>Members Referred:</strong></td>
+<td class="trow2">4</td>
+</tr>
+<!-- end: member_profile_referrals -->
+				<!-- start: member_profile_reputation -->
+<tr>
+	<td class="trow1"><strong>Reputation:</strong></td>
+	<td class="trow1"><!-- start: postbit_reputation_formatted -->
+<strong class="reputation_positive">25</strong>
+<!-- end: postbit_reputation_formatted --> [<a href="reputation.php?uid=95614">Details</a>] </td>
+</tr>
+<!-- end: member_profile_reputation -->
+				<!-- start: member_profile_warninglevel -->
+<tr>
+	<td class="trow2"><strong>Warning Level:</strong></td>
+	<td class="trow2"><a href="usercp.php"><!-- start: postbit_warninglevel_formatted -->
+<span class="normal_warning">0%</span>
+<!-- end: postbit_warninglevel_formatted --></a> </td>
+</tr>
+<!-- end: member_profile_warninglevel -->
+			</table>
+			<!-- start: member_profile_contact_details -->
+<br />
+<table border="0" cellspacing="0" cellpadding="10" class="tborder tfixed">
+	<colgroup>
+	<col style="width: 30%;" />
+	</colgroup>
+	<tr>
+		<td colspan="2" class="thead"><strong>Earthquake's Contact Details</strong></td>
+	</tr>
+	
+	<!-- start: member_profile_email -->
+<tr>
+<td class="trow1"><strong>Email:</strong></td>
+<td class="trow1"><a href="member.php?action=emailuser&amp;uid=95614">Send Earthquake an email.</a></td>
+</tr>
+<!-- end: member_profile_email -->
+	<!-- start: member_profile_pm -->
+<tr>
+	<td class="trow2"><strong>Private Message:</strong></td>
+	<td class="trow2"><a href="private.php?action=send&amp;uid=95614">Send Earthquake a private message.</a></td>
+</tr>
+<!-- end: member_profile_pm -->
+	
+	
+	
+	
+	
+</table>
+<!-- end: member_profile_contact_details -->
+		</td>
+		<td>&nbsp;&nbsp;</td>
+		<td width="50%" valign="top">
+			<!-- start: member_profile_customfields -->
+<table border="0" cellspacing="0" cellpadding="10" class="tborder tfixed">
+<colgroup>
+<col style="width: 30%;" />
+</colgroup>
+<tr>
+<td colspan="2" class="thead"><strong>Additional Info About Earthquake</strong></td>
+</tr>
+<!-- start: member_profile_customfields_field -->
+<tr>
+<td class="trow1"><strong>Sex:</strong></td>
+<td class="trow1 scaleimages">Undisclosed</td>
+</tr>
+<!-- end: member_profile_customfields_field -->
+</table>
+<br />
+<!-- end: member_profile_customfields -->
+			<!-- start: ougcawards_profile -->
+<table border="0" cellspacing="0" cellpadding="10" class="tborder tfixed">
+	<tr>
+		<td class="thead"><strong>Earthquake's awards.</strong></td>
+	</tr>
+	<!-- start: ougcawards_profile_row -->
+<tr>
+	<td class="trow1">
+		<span class="float_right smalltext">12-30-2016 <i>at</i> 08:54 PM</span> Christmas 2016
+	</td>
+</tr><tr>
+	<td class="trow1" style="vertical-align: middle;">
+		<a href="https://v3rmillion.net/awards.php?view=21" title="Christmas 2016"><img src="https://v3rmillion.net/images/awdDecals/Christmas2016.png" alt="Christmas 2016" /></a> Celebrating Christmas with us in 2016 by posting on a specific thread.
+	</td>
+</tr>
+<!-- end: ougcawards_profile_row --><!-- start: ougcawards_profile_row -->
+<tr>
+	<td class="trow2">
+		<span class="float_right smalltext">09-11-2016 <i>at</i> 01:28 PM</span> Elite Member
+	</td>
+</tr><tr>
+	<td class="trow2" style="vertical-align: middle;">
+		<a href="https://v3rmillion.net/awards.php?view=9" title="Elite Member"><img src="https://v3rmillion.net/images/Elite.png" alt="Elite Member" /></a> Donating for Elite VIP
+	</td>
+</tr>
+<!-- end: ougcawards_profile_row -->
+	<!-- start: ougcawards_profile_multipage -->
+
+<!-- end: ougcawards_profile_multipage -->
+</table>
+<br />
+<!-- end: ougcawards_profile -->
+			
+			
+			<div style="text-align: center"></div>
+		</td>
+	</tr>
+</table>
+	<br/><br/><br/>
+<!-- start: footer -->
+
+
+<div id="footer">
+
+			<ul class="bottommenu">
+                                <h2>Navigation</h2>
+								<li><a href="/removals"><i class="fa fa-times"></i>&nbsp; Request Content Removal</a></li>
+				                <!-- start: footer_contactus -->
+<li><a href="https://v3rmillion.net/contact.php"><i class="fa fa-envelope"></i>&nbsp; Contact Us</a></li>
+<!-- end: footer_contactus -->
+				<li><a href="legal.html"><i class="fa fa-gavel"></i>&nbsp; Legal Documents</a></li>
+			</ul> 
+		    <ul class="bottommenu">
+                                <h2>Links</h2>
+								<li><a href="legal.html#priv"><i class="fa fa-eye"></i>&nbsp; Privacy Policy</a></li>
+								<li><a href="rules.php"><i class="fa fa-flag"></i>&nbsp; Rules</a></li>
+								<li><a href="autoupgrade.php"><i class="fa fa-star"></i>&nbsp; Upgrade</a></li>
+			</ul> 
+                        <div class='cRem' id="about">
+                        <h2>About Us</h2>
+Vermillion is a Programming and Gaming community forum dedicated to the conversation of a range of topics, within and out of the programming world. Join us today! If you have any questions, feel free to make a thread in our <a href='forumdisplay.php?fid=13'>User Support Section</a> or <a href='contact.php'>contact us by email.</a>
+							<br /><br />If any content on this site is illegal, infringes on your copyright, or contains personal information, you can <a href="/removals">request to have it removed with this form</a>. If content is in violation of our <a href="rules.php">rules</a>, please use the report button or contact a <a href="showteam.php">staff member</a>.</span>
+	</div>
+</div>
+			<div id="copyright">
+				Powered By <a href="http://www.mybb.com" target="_blank">MyBB</a> &copy; 2017
+			</div>
+
+</div>
+
+
+
+<!-- The following piece of code allows MyBB to run scheduled tasks. DO NOT REMOVE --><!-- start: task_image -->
+<!--<img src="https://v3rmillion.net/task.php" width="1" height="1" alt="" />-->
+<!-- end: task_image --><!-- End task image code -->
+<script type="text/javascript">if(MyBB) { $([document, window]).bind("load", function() { MyBB.detectDSTChange('-4'); }); }</script>
+
+</div>
+</div><!-- start: myalerts_modal_content -->
+<div id="myalerts_alerts_modal" style="display: none;">
+    <table class="tborder" cellspacing="0">
+        <thead>
+        <tr>
+            <th class="thead" colspan="3">
+                <strong>Recent Alerts</strong>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- start: myalerts_alert_row_popup_no_alerts -->
+<tr class="alert alert-row__no-alerts">
+    <td colspan="2" class="trow1">
+        No alerts to display
+    </td>
+</tr>
+
+<!-- end: myalerts_alert_row_popup_no_alerts -->
+        </tbody>
+        <tr>
+            <td class="tfoot smalltext" colspan="3">
+                <a href="https://v3rmillion.net/alerts.php">View Alerts</a>
+                <span class="float_right">
+                    <a href="https://v3rmillion.net/alerts.php?action=delete_all&amp;my_post_key=d1f8f6d1e56392bef8a11c5df671581f&amp;ret_link=https%3A%2F%2Fv3rmillion.net%2Fmember.php%3Faction%3Dprofile%26uid%3D95614"
+                       onclick="return confirm('Really delete all alerts? This cannot be undone!')">Delete All Alerts</a>
+                </span>
+                <br class="clear"/>
+                <!-- Clear alerts link goes here... -->
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- end: myalerts_modal_content --><!-- start: myalerts_modal_content -->
+<div id="myalerts_alerts_modal" style="display: none;">
+    <table class="tborder" cellspacing="0">
+        <thead>
+        <tr>
+            <th class="thead" colspan="3">
+                <strong>Recent Alerts</strong>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- start: myalerts_alert_row_popup_no_alerts -->
+<tr class="alert alert-row__no-alerts">
+    <td colspan="2" class="trow1">
+        No alerts to display
+    </td>
+</tr>
+
+<!-- end: myalerts_alert_row_popup_no_alerts -->
+        </tbody>
+        <tr>
+            <td class="tfoot smalltext" colspan="3">
+                <a href="https://v3rmillion.net/alerts.php">View Alerts</a>
+                <span class="float_right">
+                    <a href="https://v3rmillion.net/alerts.php?action=delete_all&amp;my_post_key=d1f8f6d1e56392bef8a11c5df671581f&amp;ret_link=https%3A%2F%2Fv3rmillion.net%2Fmember.php%3Faction%3Dprofile%26uid%3D95614"
+                       onclick="return confirm('Really delete all alerts? This cannot be undone!')">Delete All Alerts</a>
+                </span>
+                <br class="clear"/>
+                <!-- Clear alerts link goes here... -->
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- end: myalerts_modal_content -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-78420601-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<!-- end: footer -->
+</body>
+</html>
+<!-- end: member_profile -->
